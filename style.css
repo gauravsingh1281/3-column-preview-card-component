@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Brightorange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Verylightgray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.car1,
+.car2,
+.car3 {
+  width: 265px;
+  height: 438px;
+  padding: 22px;
+}
+.card-sedens,
+.card-SUVs,
+.card-Luxury {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 17px;
+}
+.car1 {
+  background-color: var(--Brightorange);
+  border-radius: 12px 0 0 12px;
+}
+.car2 {
+  background-color: var(--Darkcyan);
+}
+.car3 {
+  background-color: var(--Verydarkcyan);
+  border-radius: 0 12px 12px 0;
+}
+h1 {
+  margin: 20px 0;
+  color: var(--Verylightgray-background-headings-buttons);
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+p {
+  line-height: 24px;
+  width: 105%;
+  color: var(--Transparent-white-paragraphs);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn {
+  border: none;
+  background-color: var(--Verylightgray-background-headings-buttons);
+  width: 130px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 75px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+.car1 .btn {
+  color: var(--Brightorange);
+}
+.car2 .btn {
+  color: var(--Darkcyan);
+}
+.car3 .btn {
+  color: var(--Verydarkcyan);
+}
+.btn:hover {
+  border: 2px solid var(--Verylightgray-background-headings-buttons);
+  background-color: unset;
+  color: var(--Verylightgray-background-headings-buttons);
+  cursor: pointer;
+}
+
+@media (max-width: 426px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .car1 {
+    background-color: var(--Brightorange);
+    border-radius: 12px 12px 0 0;
+  }
+  .car2 {
+    background-color: var(--Darkcyan);
+  }
+  .car3 {
+    background-color: var(--Verydarkcyan);
+    border-radius: 0 0 12px 12px;
+  }
+  p {
+    line-height: 24px;
+    width: 114%;
+    color: var(--Transparent-white-paragraphs);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
