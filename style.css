@@ -18,7 +18,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 .container {
   display: flex;
@@ -128,4 +127,13 @@ p {
     align-items: center;
     padding: 1rem 0;
   }
+}
+
+@media (min-width: 426px) {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 }
